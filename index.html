@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiblioTK</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsividad.css">
+    <style>
+      /* Estilos generales para la tabla */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        font-family: sans-serif;
+        min-width: 400px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      }
+      th, td {
+        padding: 12px 15px;
+        text-align: center;
+      }
+      th {
+        background-color:  #0A3B61;
+        color: #ffffff;
+        text-transform: uppercase;
+      }
+      tr {
+        border-bottom: 1px solid #dddddd;
+      }
+      tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+      }
+      tr:last-of-type {
+        border-bottom: 2px solid  #0A3B61;
+      }
+      tr:hover {
+        background-color: #f1f1f1;
+      }
+    </style>
+  </head>
+  
+  <body>
+
+    <header>
+      <div class="container">
+        <nav>
+
+          <div>
+            <img src="img/logo.png" alt="">
+            <h3>BiblioTK</h3>
+          </div>
+
+          <div class="menu-icon">
+            <span class="icon"></span>
+            <span class="icon"></span>
+            <span class="icon"></span>
+          </div>
+
+          <ul class="menu">
+            <li><a href="index.html" style="color: aquamarine;">Busqueda</a></li>
+            <li><a href="Servicios.html">Servicios</a></li>
+            <li><a href="QuienesSomos.html">Quienes Somos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="login.html">Cerrar Sesion</a></li>
+          </ul>
+            
+        </nav>
+      </div>
+    </header>
+
+    <main>
+
+      <section class="card">
+        <div class="contact-form">
+        <form>
+          
+          <div class="form-group">
+            <label for="busqueda"> <h2>Busca el libro que quieras</h2></label>
+            <input id="busqueda" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="asignatura">Filtrar por asignatura:</label>
+           <select id="asignatura" name="asignatura">
+              <option value="nada">Ninguna</option>
+              <option value="pro0">Programacion Segura?</option>
+              <option value="pro1">Programacion Orientada a Objetos</option>
+              <option value="front">Front End</option>
+              <option value="bd0">Introduccion a Base de datos</option>
+              <option value="bd1">Base de datos 1</option>
+              <option value="bd1">Base de datos 2</option>
+              <option value="met0">Metologia Agil</option>
+              <option value="ing1">Ingles 1</option>
+            </select>
+          </div>
+              <!--  no me funcion el enlace ala pagina index-respuesta.html-->
+            <button onclick="window.location.href='index-respuesta.html';" type="submit">Buscar</button>
+          
+          </div>
+          
+          
+        </form>
+        <hr>
+        
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
