@@ -1,0 +1,76 @@
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        transition: all 0.3s ease-in-out;
+        top: 130px;
+        /* Aumentado el espacio entre el icono y el menú */
+        left: 50%;
+        /* Centrado horizontalmente */
+        transform: translateX(-50%);
+        /* Centrado horizontalmente */
+        background-color: #192027;
+        width: 100%;
+        /* Reduciendo el ancho */
+        padding: 10px;
+        border-radius: 10px;
+        /* Añadiendo bordes redondeados */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        /* Añadiendo sombra */
+    }
+
+    .menu li { margin: 12px 0; }
+
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Centrado vertical */
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-icon .icon {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px;
+        transition: background-color 0.4s;
+    }
+
+    .menu-icon.active .icon:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-icon.active .icon:first-child {
+        transform: rotate(45deg);
+        transform-origin: center;
+    }
+
+    .menu-icon.active .icon:last-child {
+        transform: rotate(-45deg);
+        transform-origin: center;
+        margin-top: -16px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        /* Cambiar a una sola columna */
+    }
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    .contact-form,
+    .location-info {
+        flex-basis: 100%;
+    }
+}

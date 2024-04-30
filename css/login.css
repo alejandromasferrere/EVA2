@@ -1,0 +1,62 @@
+body {
+    /*border:5px solid yellow ; /**/
+    margin: 0;  /* Acoplamos la base al amrgen*/
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.login-contenedor-principal {  
+    display: flex;  /*  Caja flexible*/
+    justify-content: center;    /*  Centrado general*/
+    align-items: center;    /*  Centrado general*/
+    height: 100vh;  /*  Altura del elemento será igual al 100% del alto del viewport (la ventana visible del navegador)*/
+}
+
+.login-contenedor-login {
+    /*border: 5px solid red;    /**/
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);    
+    padding: 60px;  /* Marco del contenedor formulario*/
+    text-align: center;
+    min-width: 340px;   /* Tamaño del formulario y al mismo tiempo tamaño minimo*/
+}
+
+.logo { width: 90px; height: auto; margin-bottom: 20px; }
+
+.login-grupo-formulario { margin-bottom: 20px; }    /* Clase para los sub elementos del formulario */
+
+.login-grupo-formulario label {
+    display: block; /* aplica a elementos en línea o elementos en bloque. ocupan todo el ancho disponible y siempre comienzan en una nueva línea.*/
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.login-grupo-formulario input {
+    width: 98%;
+    padding: 10px 1px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 13px;
+    color:#333;
+}
+
+.olvidaste-contraseña {margin-top: 10px; }
+
+.olvidaste-contraseña a { color: #333; text-decoration: none;   }
+
+.olvidaste-contraseña a:hover { text-decoration: underline;  }
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;   /*   eliminar el borde predeterminado que se muestra alrededor de los botones*/
+    padding: 10px 20px; /*  Le da la altura al boton por el  */
+    border-radius: 3px;
+    cursor: pointer;    /*  aspecto del cursor del mouse cuando se coloca sobre un elemento interactivo*/
+    width: 100%;
+}
+
+button:hover {
+    background-color: #555;
+}
